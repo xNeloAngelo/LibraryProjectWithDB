@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addBookForm.Designer.cs">
+      <DependentUpon>addBookForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="addMemberForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addMemberForm.Designer.cs">
       <DependentUpon>addMemberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addPublisherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPublisherForm.Designer.cs">
+      <DependentUpon>addPublisherForm.cs</DependentUpon>
     </Compile>
     <Compile Include="femoveMemberForm.cs">
       <SubType>Form</SubType>
@@ -84,6 +96,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LIBDATABASEDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LIBDATABASEDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBDATABASEDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIBDATABASEDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBDATABASEDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIBDATABASEDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBDATABASEDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIBDATABASEDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBDATABASEDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIBDATABASEDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBDATABASEDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIBDATABASEDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBDATABASEDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainFormLibrary.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,14 +140,44 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="removeBooksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeBooksForm.Designer.cs">
+      <DependentUpon>removeBooksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removePublisherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removePublisherForm.Designer.cs">
+      <DependentUpon>removePublisherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewBooksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewBooksForm.Designer.cs">
+      <DependentUpon>viewBooksForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewMembers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ViewMembers.Designer.cs">
       <DependentUpon>ViewMembers.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewPublisherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPublisherForm.Designer.cs">
+      <DependentUpon>viewPublisherForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addBookForm.resx">
+      <DependentUpon>addBookForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addMemberForm.resx">
       <DependentUpon>addMemberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addPublisherForm.resx">
+      <DependentUpon>addPublisherForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="femoveMemberForm.resx">
       <DependentUpon>femoveMemberForm.cs</DependentUpon>
@@ -128,8 +200,20 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="removeBooksForm.resx">
+      <DependentUpon>removeBooksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removePublisherForm.resx">
+      <DependentUpon>removePublisherForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewBooksForm.resx">
+      <DependentUpon>viewBooksForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewMembers.resx">
       <DependentUpon>ViewMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPublisherForm.resx">
+      <DependentUpon>viewPublisherForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="LIBDATABASEDataSet.xsc">
       <DependentUpon>LIBDATABASEDataSet.xsd</DependentUpon>
@@ -174,6 +258,72 @@
     </None>
     <None Include="LIBDATABASEDataSet3.xss">
       <DependentUpon>LIBDATABASEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet4.xsc">
+      <DependentUpon>LIBDATABASEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBDATABASEDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBDATABASEDataSet4.xss">
+      <DependentUpon>LIBDATABASEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet5.xsc">
+      <DependentUpon>LIBDATABASEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBDATABASEDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBDATABASEDataSet5.xss">
+      <DependentUpon>LIBDATABASEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet6.xsc">
+      <DependentUpon>LIBDATABASEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBDATABASEDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBDATABASEDataSet6.xss">
+      <DependentUpon>LIBDATABASEDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet7.xsc">
+      <DependentUpon>LIBDATABASEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBDATABASEDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBDATABASEDataSet7.xss">
+      <DependentUpon>LIBDATABASEDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet8.xsc">
+      <DependentUpon>LIBDATABASEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBDATABASEDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBDATABASEDataSet8.xss">
+      <DependentUpon>LIBDATABASEDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet9.xsc">
+      <DependentUpon>LIBDATABASEDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBDATABASEDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBDATABASEDataSet9.xss">
+      <DependentUpon>LIBDATABASEDataSet9.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

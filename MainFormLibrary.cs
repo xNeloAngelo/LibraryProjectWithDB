@@ -13,7 +13,7 @@ namespace LibraryProjectWithDB
 {
     public partial class MainFormLibrary : Form
     {
-        private Form currentChildForm;
+        
 
         public MainFormLibrary()
         {
@@ -46,7 +46,7 @@ namespace LibraryProjectWithDB
         }
         private void OpenChildForm(Form childForm)
         {
-            currentChildForm = childForm;
+            //currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
@@ -65,6 +65,36 @@ namespace LibraryProjectWithDB
         private void buttonRemoveMember_Click(object sender, EventArgs e)
         {
             OpenChildForm(new removeMemberForm());
+        }
+
+        private void buttonAddBook_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new addBookForm());
+        }
+
+        private void buttonListBooks_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new viewBooksForm());
+        }
+
+        private void buttonRemoveBook_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new removeBooksForm());
+        }
+
+        private void buttonAddPublisher_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new addPublisherForm());
+        }
+
+        private void buttonListPublisher_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new viewPublisherForm());
+        }
+
+        private void buttonRemovePublisher_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new removePublisherForm());
         }
     }
 }

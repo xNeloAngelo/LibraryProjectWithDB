@@ -105,6 +105,7 @@ namespace LibraryProjectWithDB
             this.buttonRemovePublisher.TabIndex = 9;
             this.buttonRemovePublisher.Text = "Remove Publisher";
             this.buttonRemovePublisher.UseVisualStyleBackColor = true;
+            this.buttonRemovePublisher.Click += new System.EventHandler(this.buttonRemovePublisher_Click);
             // 
             // buttonListPublisher
             // 
@@ -118,6 +119,7 @@ namespace LibraryProjectWithDB
             this.buttonListPublisher.TabIndex = 8;
             this.buttonListPublisher.Text = "List Publisher";
             this.buttonListPublisher.UseVisualStyleBackColor = true;
+            this.buttonListPublisher.Click += new System.EventHandler(this.buttonListPublisher_Click);
             // 
             // buttonAddPublisher
             // 
@@ -131,6 +133,7 @@ namespace LibraryProjectWithDB
             this.buttonAddPublisher.TabIndex = 7;
             this.buttonAddPublisher.Text = "Add Publisher";
             this.buttonAddPublisher.UseVisualStyleBackColor = true;
+            this.buttonAddPublisher.Click += new System.EventHandler(this.buttonAddPublisher_Click);
             // 
             // buttonRemoveBook
             // 
@@ -144,6 +147,7 @@ namespace LibraryProjectWithDB
             this.buttonRemoveBook.TabIndex = 10;
             this.buttonRemoveBook.Text = "Remove Book";
             this.buttonRemoveBook.UseVisualStyleBackColor = true;
+            this.buttonRemoveBook.Click += new System.EventHandler(this.buttonRemoveBook_Click);
             // 
             // buttonListBooks
             // 
@@ -157,6 +161,7 @@ namespace LibraryProjectWithDB
             this.buttonListBooks.TabIndex = 4;
             this.buttonListBooks.Text = "List Books";
             this.buttonListBooks.UseVisualStyleBackColor = true;
+            this.buttonListBooks.Click += new System.EventHandler(this.buttonListBooks_Click);
             // 
             // buttonAddBook
             // 
@@ -170,6 +175,7 @@ namespace LibraryProjectWithDB
             this.buttonAddBook.TabIndex = 3;
             this.buttonAddBook.Text = "Add Book";
             this.buttonAddBook.UseVisualStyleBackColor = true;
+            this.buttonAddBook.Click += new System.EventHandler(this.buttonAddBook_Click);
             // 
             // buttonRemoveMember
             // 
@@ -232,6 +238,8 @@ namespace LibraryProjectWithDB
             this.Controls.Add(this.buttonListMembers);
             this.Controls.Add(this.buttonAddMember);
             this.Controls.Add(this.buttonLending);
+            this.MaximumSize = new System.Drawing.Size(856, 572);
+            this.MinimumSize = new System.Drawing.Size(856, 572);
             this.Name = "MainFormLibrary";
             this.Text = "MainFormLibrary";
             this.ResumeLayout(false);

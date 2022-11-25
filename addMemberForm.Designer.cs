@@ -47,7 +47,6 @@ namespace LibraryProjectWithDB
             this.memberTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet1TableAdapters.MemberTableAdapter();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.buttonClearFields = new System.Windows.Forms.Button();
-            this.buttonBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
@@ -193,25 +192,13 @@ namespace LibraryProjectWithDB
             this.buttonClearFields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClearFields.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClearFields.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonClearFields.Location = new System.Drawing.Point(273, 28);
+            this.buttonClearFields.Location = new System.Drawing.Point(272, 88);
             this.buttonClearFields.Name = "buttonClearFields";
             this.buttonClearFields.Size = new System.Drawing.Size(121, 63);
             this.buttonClearFields.TabIndex = 10;
             this.buttonClearFields.Text = "Clear";
             this.buttonClearFields.UseVisualStyleBackColor = true;
             this.buttonClearFields.Click += new System.EventHandler(this.buttonClearFields_Click);
-            // 
-            // buttonBack
-            // 
-            this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBack.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonBack.Location = new System.Drawing.Point(273, 117);
-            this.buttonBack.Name = "buttonBack";
-            this.buttonBack.Size = new System.Drawing.Size(121, 67);
-            this.buttonBack.TabIndex = 11;
-            this.buttonBack.Text = "Go Back";
-            this.buttonBack.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -389,7 +376,6 @@ namespace LibraryProjectWithDB
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBoxLastName);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonClearFields);
             this.Controls.Add(this.textBoxFirstName);
             this.Controls.Add(this.dataGridView1);
@@ -426,7 +412,6 @@ namespace LibraryProjectWithDB
         private System.Windows.Forms.DataGridViewTextBoxColumn memberStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox textBoxFirstName;
         private System.Windows.Forms.Button buttonClearFields;
-        private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBoxLastName;

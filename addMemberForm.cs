@@ -44,6 +44,13 @@ namespace LibraryProjectWithDB
         private void buttonClearFields_Click(object sender, EventArgs e)
         {
             textBoxFirstName.Text = "First Name";
+            textBoxLastName.Text = "Last Name";
+            textBoxMemberID.Text = "ID";
+            textBoxEmail.Text = "E-Mail";
+            textBoxAdress.Text = "Adress";
+            textBoxDateJoined.Text = "Date Joined";
+            textBoxPhone.Text = "Phone Number";
+            textBoxMemberStatus.Text = "Member Status";
 
         }
     }
