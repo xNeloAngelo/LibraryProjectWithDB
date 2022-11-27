@@ -31,9 +31,6 @@ namespace LibraryProjectWithDB
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lIBDATABASEDataSet4 = new LibraryProjectWithDB.LIBDATABASEDataSet4();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bookTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet4TableAdapters.BookTableAdapter();
             this.bookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,9 +38,12 @@ namespace LibraryProjectWithDB
             this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearPublishedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remarksDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lIBDATABASEDataSet4 = new LibraryProjectWithDB.LIBDATABASEDataSet4();
+            this.bookTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet4TableAdapters.BookTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -64,20 +64,6 @@ namespace LibraryProjectWithDB
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(641, 452);
             this.dataGridView1.TabIndex = 17;
-            // 
-            // lIBDATABASEDataSet4
-            // 
-            this.lIBDATABASEDataSet4.DataSetName = "LIBDATABASEDataSet4";
-            this.lIBDATABASEDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataMember = "Book";
-            this.bookBindingSource.DataSource = this.lIBDATABASEDataSet4;
-            // 
-            // bookTableAdapter
-            // 
-            this.bookTableAdapter.ClearBeforeFill = true;
             // 
             // bookIDDataGridViewTextBoxColumn
             // 
@@ -121,6 +107,20 @@ namespace LibraryProjectWithDB
             this.remarksDataGridViewTextBoxColumn.HeaderText = "Remarks";
             this.remarksDataGridViewTextBoxColumn.Name = "remarksDataGridViewTextBoxColumn";
             // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataMember = "Book";
+            this.bookBindingSource.DataSource = this.lIBDATABASEDataSet4;
+            // 
+            // lIBDATABASEDataSet4
+            // 
+            this.lIBDATABASEDataSet4.DataSetName = "LIBDATABASEDataSet4";
+            this.lIBDATABASEDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bookTableAdapter
+            // 
+            this.bookTableAdapter.ClearBeforeFill = true;
+            // 
             // viewBooksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -132,8 +132,8 @@ namespace LibraryProjectWithDB
             this.Text = "viewBooksForm";
             this.Load += new System.EventHandler(this.viewBooksForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet4)).EndInit();
             this.ResumeLayout(false);
 
         }

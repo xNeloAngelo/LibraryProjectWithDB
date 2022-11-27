@@ -32,12 +32,7 @@ namespace LibraryProjectWithDB
             this.components = new System.ComponentModel.Container();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBoxBookID = new System.Windows.Forms.TextBox();
-            this.buttonClearFields = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonRemoveBook = new System.Windows.Forms.Button();
-            this.lIBDATABASEDataSet6 = new LibraryProjectWithDB.LIBDATABASEDataSet6();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bookTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet6TableAdapters.BookTableAdapter();
             this.bookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,9 +40,13 @@ namespace LibraryProjectWithDB
             this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearPublishedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remarksDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lIBDATABASEDataSet6 = new LibraryProjectWithDB.LIBDATABASEDataSet6();
+            this.buttonRemoveBook = new System.Windows.Forms.Button();
+            this.bookTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet6TableAdapters.BookTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet6)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
@@ -71,19 +70,6 @@ namespace LibraryProjectWithDB
             this.textBoxBookID.Text = "ID";
             this.textBoxBookID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // buttonClearFields
-            // 
-            this.buttonClearFields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearFields.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClearFields.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonClearFields.Location = new System.Drawing.Point(12, 65);
-            this.buttonClearFields.Name = "buttonClearFields";
-            this.buttonClearFields.Size = new System.Drawing.Size(310, 36);
-            this.buttonClearFields.TabIndex = 32;
-            this.buttonClearFields.Text = "Search";
-            this.buttonClearFields.UseVisualStyleBackColor = true;
-            this.buttonClearFields.Click += new System.EventHandler(this.buttonClearFields_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -102,33 +88,6 @@ namespace LibraryProjectWithDB
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(641, 348);
             this.dataGridView1.TabIndex = 31;
-            // 
-            // buttonRemoveBook
-            // 
-            this.buttonRemoveBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRemoveBook.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemoveBook.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonRemoveBook.Location = new System.Drawing.Point(343, 65);
-            this.buttonRemoveBook.Name = "buttonRemoveBook";
-            this.buttonRemoveBook.Size = new System.Drawing.Size(310, 36);
-            this.buttonRemoveBook.TabIndex = 30;
-            this.buttonRemoveBook.Text = "Remove Book";
-            this.buttonRemoveBook.UseVisualStyleBackColor = true;
-            this.buttonRemoveBook.Click += new System.EventHandler(this.buttonRemoveBook_Click);
-            // 
-            // lIBDATABASEDataSet6
-            // 
-            this.lIBDATABASEDataSet6.DataSetName = "LIBDATABASEDataSet6";
-            this.lIBDATABASEDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataMember = "Book";
-            this.bookBindingSource.DataSource = this.lIBDATABASEDataSet6;
-            // 
-            // bookTableAdapter
-            // 
-            this.bookTableAdapter.ClearBeforeFill = true;
             // 
             // bookIDDataGridViewTextBoxColumn
             // 
@@ -172,6 +131,33 @@ namespace LibraryProjectWithDB
             this.remarksDataGridViewTextBoxColumn.HeaderText = "Remarks";
             this.remarksDataGridViewTextBoxColumn.Name = "remarksDataGridViewTextBoxColumn";
             // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataMember = "Book";
+            this.bookBindingSource.DataSource = this.lIBDATABASEDataSet6;
+            // 
+            // lIBDATABASEDataSet6
+            // 
+            this.lIBDATABASEDataSet6.DataSetName = "LIBDATABASEDataSet6";
+            this.lIBDATABASEDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // buttonRemoveBook
+            // 
+            this.buttonRemoveBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveBook.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemoveBook.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonRemoveBook.Location = new System.Drawing.Point(183, 65);
+            this.buttonRemoveBook.Name = "buttonRemoveBook";
+            this.buttonRemoveBook.Size = new System.Drawing.Size(310, 36);
+            this.buttonRemoveBook.TabIndex = 30;
+            this.buttonRemoveBook.Text = "Remove Book";
+            this.buttonRemoveBook.UseVisualStyleBackColor = true;
+            this.buttonRemoveBook.Click += new System.EventHandler(this.buttonRemoveBook_Click);
+            // 
+            // bookTableAdapter
+            // 
+            this.bookTableAdapter.ClearBeforeFill = true;
+            // 
             // removeBooksForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,15 +166,14 @@ namespace LibraryProjectWithDB
             this.ClientSize = new System.Drawing.Size(665, 476);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.textBoxBookID);
-            this.Controls.Add(this.buttonClearFields);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonRemoveBook);
             this.Name = "removeBooksForm";
             this.Text = "removeBooksForm";
             this.Load += new System.EventHandler(this.removeBooksForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,7 +183,6 @@ namespace LibraryProjectWithDB
 
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox textBoxBookID;
-        private System.Windows.Forms.Button buttonClearFields;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonRemoveBook;
         private LIBDATABASEDataSet6 lIBDATABASEDataSet6;

@@ -32,12 +32,7 @@ namespace LibraryProjectWithDB
             this.components = new System.ComponentModel.Container();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBoxMemberID = new System.Windows.Forms.TextBox();
-            this.buttonClearFields = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonRemoveMember = new System.Windows.Forms.Button();
-            this.lIBDATABASEDataSet3 = new LibraryProjectWithDB.LIBDATABASEDataSet3();
-            this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.memberTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet3TableAdapters.MemberTableAdapter();
             this.memberIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,9 +41,13 @@ namespace LibraryProjectWithDB
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.memberStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lIBDATABASEDataSet3 = new LibraryProjectWithDB.LIBDATABASEDataSet3();
+            this.buttonRemoveMember = new System.Windows.Forms.Button();
+            this.memberTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet3TableAdapters.MemberTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
@@ -72,18 +71,6 @@ namespace LibraryProjectWithDB
             this.textBoxMemberID.Text = "ID";
             this.textBoxMemberID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // buttonClearFields
-            // 
-            this.buttonClearFields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearFields.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClearFields.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonClearFields.Location = new System.Drawing.Point(12, 74);
-            this.buttonClearFields.Name = "buttonClearFields";
-            this.buttonClearFields.Size = new System.Drawing.Size(310, 36);
-            this.buttonClearFields.TabIndex = 18;
-            this.buttonClearFields.Text = "Clear";
-            this.buttonClearFields.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -103,33 +90,6 @@ namespace LibraryProjectWithDB
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(641, 348);
             this.dataGridView1.TabIndex = 16;
-            // 
-            // buttonRemoveMember
-            // 
-            this.buttonRemoveMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRemoveMember.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemoveMember.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonRemoveMember.Location = new System.Drawing.Point(343, 74);
-            this.buttonRemoveMember.Name = "buttonRemoveMember";
-            this.buttonRemoveMember.Size = new System.Drawing.Size(310, 36);
-            this.buttonRemoveMember.TabIndex = 15;
-            this.buttonRemoveMember.Text = "Remove Member";
-            this.buttonRemoveMember.UseVisualStyleBackColor = true;
-            this.buttonRemoveMember.Click += new System.EventHandler(this.buttonRemoveMember_Click);
-            // 
-            // lIBDATABASEDataSet3
-            // 
-            this.lIBDATABASEDataSet3.DataSetName = "LIBDATABASEDataSet3";
-            this.lIBDATABASEDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // memberBindingSource
-            // 
-            this.memberBindingSource.DataMember = "Member";
-            this.memberBindingSource.DataSource = this.lIBDATABASEDataSet3;
-            // 
-            // memberTableAdapter
-            // 
-            this.memberTableAdapter.ClearBeforeFill = true;
             // 
             // memberIDDataGridViewTextBoxColumn
             // 
@@ -179,6 +139,33 @@ namespace LibraryProjectWithDB
             this.memberStatusDataGridViewTextBoxColumn.HeaderText = "Member_Status";
             this.memberStatusDataGridViewTextBoxColumn.Name = "memberStatusDataGridViewTextBoxColumn";
             // 
+            // memberBindingSource
+            // 
+            this.memberBindingSource.DataMember = "Member";
+            this.memberBindingSource.DataSource = this.lIBDATABASEDataSet3;
+            // 
+            // lIBDATABASEDataSet3
+            // 
+            this.lIBDATABASEDataSet3.DataSetName = "LIBDATABASEDataSet3";
+            this.lIBDATABASEDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // buttonRemoveMember
+            // 
+            this.buttonRemoveMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveMember.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemoveMember.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonRemoveMember.Location = new System.Drawing.Point(180, 74);
+            this.buttonRemoveMember.Name = "buttonRemoveMember";
+            this.buttonRemoveMember.Size = new System.Drawing.Size(310, 36);
+            this.buttonRemoveMember.TabIndex = 15;
+            this.buttonRemoveMember.Text = "Remove Member";
+            this.buttonRemoveMember.UseVisualStyleBackColor = true;
+            this.buttonRemoveMember.Click += new System.EventHandler(this.buttonRemoveMember_Click);
+            // 
+            // memberTableAdapter
+            // 
+            this.memberTableAdapter.ClearBeforeFill = true;
+            // 
             // removeMemberForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,15 +174,14 @@ namespace LibraryProjectWithDB
             this.ClientSize = new System.Drawing.Size(665, 476);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.textBoxMemberID);
-            this.Controls.Add(this.buttonClearFields);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonRemoveMember);
             this.Name = "removeMemberForm";
             this.Text = "removeMemberForm";
             this.Load += new System.EventHandler(this.removeMemberForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,7 +190,6 @@ namespace LibraryProjectWithDB
         #endregion
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox textBoxMemberID;
-        private System.Windows.Forms.Button buttonClearFields;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonRemoveMember;
         private LIBDATABASEDataSet3 lIBDATABASEDataSet3;

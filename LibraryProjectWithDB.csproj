@@ -76,6 +76,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="lendingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lendingForm.Designer.cs">
+      <DependentUpon>lendingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LIBDATABASEDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,6 +91,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LIBDATABASEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIBDATABASEDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBDATABASEDataSet10.xsd</DependentUpon>
     </Compile>
     <Compile Include="LIBDATABASEDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -185,6 +196,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="lendingForm.resx">
+      <DependentUpon>lendingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainFormLibrary.resx">
       <DependentUpon>MainFormLibrary.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +250,17 @@
     </None>
     <None Include="LIBDATABASEDataSet1.xss">
       <DependentUpon>LIBDATABASEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet10.xsc">
+      <DependentUpon>LIBDATABASEDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="LIBDATABASEDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBDATABASEDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBDATABASEDataSet10.xss">
+      <DependentUpon>LIBDATABASEDataSet10.xsd</DependentUpon>
     </None>
     <None Include="LIBDATABASEDataSet2.xsc">
       <DependentUpon>LIBDATABASEDataSet2.xsd</DependentUpon>

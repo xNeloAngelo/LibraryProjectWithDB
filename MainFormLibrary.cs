@@ -37,7 +37,7 @@ namespace LibraryProjectWithDB
 
         private void buttonLending_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new lendingForm());
         }
 
         private void buttonAddMember_Click(object sender, EventArgs e)

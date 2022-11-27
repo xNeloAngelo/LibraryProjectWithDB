@@ -32,10 +32,13 @@ namespace LibraryProjectWithDB
 
             try
             {
+                //Created Variable with Querry input
                 String deleteMember = "DELETE FROM Member WHERE Member_ID = '"+textBoxMemberID.Text+"'";
-                
+                //Executable Querry comand using Variable containing querry and connection to specific DB
                 SqlCommand deleteMemberCommand = new SqlCommand(deleteMember, connectionOne);
 
+                //IF Querry is executed then a match has been found inside the DB and whole row containing ID is removed
+                //However if the querry is not executed then no match has been found in the DB and nothing will happen .... messagebox 
                 if(deleteMemberCommand.ExecuteNonQuery()==1)
                 {
                     MessageBox.Show("Member Removed");

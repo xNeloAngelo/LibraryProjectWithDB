@@ -32,20 +32,19 @@ namespace LibraryProjectWithDB
             this.components = new System.ComponentModel.Container();
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBoxPublisherID = new System.Windows.Forms.TextBox();
-            this.buttonClearFields = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonRemovePublisher = new System.Windows.Forms.Button();
-            this.lIBDATABASEDataSet9 = new LibraryProjectWithDB.LIBDATABASEDataSet9();
-            this.publisherBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.publisherTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet9TableAdapters.PublisherTableAdapter();
             this.publisherIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherAdressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherPhoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.publisherBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lIBDATABASEDataSet9 = new LibraryProjectWithDB.LIBDATABASEDataSet9();
+            this.buttonRemovePublisher = new System.Windows.Forms.Button();
+            this.publisherTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet9TableAdapters.PublisherTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publisherBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet9)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
@@ -69,18 +68,6 @@ namespace LibraryProjectWithDB
             this.textBoxPublisherID.Text = "ID";
             this.textBoxPublisherID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // buttonClearFields
-            // 
-            this.buttonClearFields.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearFields.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClearFields.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonClearFields.Location = new System.Drawing.Point(12, 65);
-            this.buttonClearFields.Name = "buttonClearFields";
-            this.buttonClearFields.Size = new System.Drawing.Size(310, 36);
-            this.buttonClearFields.TabIndex = 37;
-            this.buttonClearFields.Text = "Search";
-            this.buttonClearFields.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
@@ -97,33 +84,6 @@ namespace LibraryProjectWithDB
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(641, 348);
             this.dataGridView1.TabIndex = 36;
-            // 
-            // buttonRemovePublisher
-            // 
-            this.buttonRemovePublisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRemovePublisher.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRemovePublisher.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonRemovePublisher.Location = new System.Drawing.Point(343, 65);
-            this.buttonRemovePublisher.Name = "buttonRemovePublisher";
-            this.buttonRemovePublisher.Size = new System.Drawing.Size(310, 36);
-            this.buttonRemovePublisher.TabIndex = 35;
-            this.buttonRemovePublisher.Text = "Remove Publisher";
-            this.buttonRemovePublisher.UseVisualStyleBackColor = true;
-            this.buttonRemovePublisher.Click += new System.EventHandler(this.buttonRemovePublisher_Click);
-            // 
-            // lIBDATABASEDataSet9
-            // 
-            this.lIBDATABASEDataSet9.DataSetName = "LIBDATABASEDataSet9";
-            this.lIBDATABASEDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // publisherBindingSource
-            // 
-            this.publisherBindingSource.DataMember = "Publisher";
-            this.publisherBindingSource.DataSource = this.lIBDATABASEDataSet9;
-            // 
-            // publisherTableAdapter
-            // 
-            this.publisherTableAdapter.ClearBeforeFill = true;
             // 
             // publisherIDDataGridViewTextBoxColumn
             // 
@@ -155,6 +115,33 @@ namespace LibraryProjectWithDB
             this.publisherPhoneNumberDataGridViewTextBoxColumn.HeaderText = "Publisher_Phone_Number";
             this.publisherPhoneNumberDataGridViewTextBoxColumn.Name = "publisherPhoneNumberDataGridViewTextBoxColumn";
             // 
+            // publisherBindingSource
+            // 
+            this.publisherBindingSource.DataMember = "Publisher";
+            this.publisherBindingSource.DataSource = this.lIBDATABASEDataSet9;
+            // 
+            // lIBDATABASEDataSet9
+            // 
+            this.lIBDATABASEDataSet9.DataSetName = "LIBDATABASEDataSet9";
+            this.lIBDATABASEDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // buttonRemovePublisher
+            // 
+            this.buttonRemovePublisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemovePublisher.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRemovePublisher.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonRemovePublisher.Location = new System.Drawing.Point(187, 65);
+            this.buttonRemovePublisher.Name = "buttonRemovePublisher";
+            this.buttonRemovePublisher.Size = new System.Drawing.Size(310, 36);
+            this.buttonRemovePublisher.TabIndex = 35;
+            this.buttonRemovePublisher.Text = "Remove Publisher";
+            this.buttonRemovePublisher.UseVisualStyleBackColor = true;
+            this.buttonRemovePublisher.Click += new System.EventHandler(this.buttonRemovePublisher_Click);
+            // 
+            // publisherTableAdapter
+            // 
+            this.publisherTableAdapter.ClearBeforeFill = true;
+            // 
             // removePublisherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,15 +150,14 @@ namespace LibraryProjectWithDB
             this.ClientSize = new System.Drawing.Size(665, 476);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.textBoxPublisherID);
-            this.Controls.Add(this.buttonClearFields);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonRemovePublisher);
             this.Name = "removePublisherForm";
             this.Text = "removePublisherForm";
             this.Load += new System.EventHandler(this.removePublisherForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publisherBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,7 +167,6 @@ namespace LibraryProjectWithDB
 
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TextBox textBoxPublisherID;
-        private System.Windows.Forms.Button buttonClearFields;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonRemovePublisher;
         private LIBDATABASEDataSet9 lIBDATABASEDataSet9;

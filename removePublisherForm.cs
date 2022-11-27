@@ -42,7 +42,7 @@ namespace LibraryProjectWithDB
                 }
                 else
                 {
-                    MessageBox.Show("Unable to remove publisher, check if ID exist!");
+                    MessageBox.Show("Unable to remove publisher, check if ID exists!");
                 }
             }
             catch (Exception ex)

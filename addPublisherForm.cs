@@ -34,5 +34,16 @@ namespace LibraryProjectWithDB
             addPublisherCommand.ExecuteNonQuery();
             connectionOne.Close();
         }
+
+        private void buttonClearFields_Click(object sender, EventArgs e)
+        {
+            //resets text boxes due to not using labels
+            textBoxPublisherID.Text = "Publisher ID";
+            textBoxPublisherName.Text = "Publisher Name";
+            textBoxPublisherAdress.Text = "Publisher Adress";
+            textBoxPublisherEmail.Text = "Publisher Email";
+            textBoxPhoneNumber.Text = "Publisher Phone Number";
+            
+        }
     }
 }

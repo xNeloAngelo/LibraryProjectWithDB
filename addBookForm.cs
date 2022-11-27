@@ -35,5 +35,92 @@ namespace LibraryProjectWithDB
             this.bookTableAdapter.Fill(this.lIBDATABASEDataSet5.Book);
 
         }
+
+        private void textBoxRemarks_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxYearPublished_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxAuthorName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxCategoryID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxPublisherID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxBookName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonClearFields_Click(object sender, EventArgs e)
+        {
+            textBoxBookID.Text = "ID";
+            textBoxBookName.Text = "Book Name";
+            textBoxCategoryID.Text = "Category ID";
+            textBoxPublisherID.Text = "Publisher ID";
+            textBoxAuthorName.Text = "Author Name";
+            textBoxYearPublished.Text = "Year Published";
+            textBoxRemarks.Text = "Remarks";
+
+        }
+
+        private void textBoxBookID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

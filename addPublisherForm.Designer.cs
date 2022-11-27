@@ -42,18 +42,18 @@ namespace LibraryProjectWithDB
             this.buttonClearFields = new System.Windows.Forms.Button();
             this.textBoxPublisherID = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonAddPublisher = new System.Windows.Forms.Button();
-            this.lIBDATABASEDataSet7 = new LibraryProjectWithDB.LIBDATABASEDataSet7();
-            this.publisherBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.publisherTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet7TableAdapters.PublisherTableAdapter();
             this.publisherIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherAdressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherPhoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.publisherBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lIBDATABASEDataSet7 = new LibraryProjectWithDB.LIBDATABASEDataSet7();
+            this.buttonAddPublisher = new System.Windows.Forms.Button();
+            this.publisherTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet7TableAdapters.PublisherTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publisherBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet7)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
@@ -159,6 +159,7 @@ namespace LibraryProjectWithDB
             this.buttonClearFields.TabIndex = 18;
             this.buttonClearFields.Text = "Clear";
             this.buttonClearFields.UseVisualStyleBackColor = true;
+            this.buttonClearFields.Click += new System.EventHandler(this.buttonClearFields_Click);
             // 
             // textBoxPublisherID
             // 
@@ -190,33 +191,6 @@ namespace LibraryProjectWithDB
             this.dataGridView1.Size = new System.Drawing.Size(641, 258);
             this.dataGridView1.TabIndex = 16;
             // 
-            // buttonAddPublisher
-            // 
-            this.buttonAddPublisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddPublisher.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddPublisher.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAddPublisher.Location = new System.Drawing.Point(182, 420);
-            this.buttonAddPublisher.Name = "buttonAddPublisher";
-            this.buttonAddPublisher.Size = new System.Drawing.Size(310, 36);
-            this.buttonAddPublisher.TabIndex = 15;
-            this.buttonAddPublisher.Text = "Add Publisher";
-            this.buttonAddPublisher.UseVisualStyleBackColor = true;
-            this.buttonAddPublisher.Click += new System.EventHandler(this.buttonAddPublisher_Click);
-            // 
-            // lIBDATABASEDataSet7
-            // 
-            this.lIBDATABASEDataSet7.DataSetName = "LIBDATABASEDataSet7";
-            this.lIBDATABASEDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // publisherBindingSource
-            // 
-            this.publisherBindingSource.DataMember = "Publisher";
-            this.publisherBindingSource.DataSource = this.lIBDATABASEDataSet7;
-            // 
-            // publisherTableAdapter
-            // 
-            this.publisherTableAdapter.ClearBeforeFill = true;
-            // 
             // publisherIDDataGridViewTextBoxColumn
             // 
             this.publisherIDDataGridViewTextBoxColumn.DataPropertyName = "Publisher_ID";
@@ -247,6 +221,33 @@ namespace LibraryProjectWithDB
             this.publisherPhoneNumberDataGridViewTextBoxColumn.HeaderText = "Publisher_Phone_Number";
             this.publisherPhoneNumberDataGridViewTextBoxColumn.Name = "publisherPhoneNumberDataGridViewTextBoxColumn";
             // 
+            // publisherBindingSource
+            // 
+            this.publisherBindingSource.DataMember = "Publisher";
+            this.publisherBindingSource.DataSource = this.lIBDATABASEDataSet7;
+            // 
+            // lIBDATABASEDataSet7
+            // 
+            this.lIBDATABASEDataSet7.DataSetName = "LIBDATABASEDataSet7";
+            this.lIBDATABASEDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // buttonAddPublisher
+            // 
+            this.buttonAddPublisher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddPublisher.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddPublisher.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonAddPublisher.Location = new System.Drawing.Point(182, 420);
+            this.buttonAddPublisher.Name = "buttonAddPublisher";
+            this.buttonAddPublisher.Size = new System.Drawing.Size(310, 36);
+            this.buttonAddPublisher.TabIndex = 15;
+            this.buttonAddPublisher.Text = "Add Publisher";
+            this.buttonAddPublisher.UseVisualStyleBackColor = true;
+            this.buttonAddPublisher.Click += new System.EventHandler(this.buttonAddPublisher_Click);
+            // 
+            // publisherTableAdapter
+            // 
+            this.publisherTableAdapter.ClearBeforeFill = true;
+            // 
             // addPublisherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,8 +271,8 @@ namespace LibraryProjectWithDB
             this.Text = "addPublisherForm";
             this.Load += new System.EventHandler(this.addPublisherForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publisherBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

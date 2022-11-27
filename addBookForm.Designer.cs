@@ -46,10 +46,6 @@ namespace LibraryProjectWithDB
             this.buttonClearFields = new System.Windows.Forms.Button();
             this.textBoxBookID = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.buttonAddBook = new System.Windows.Forms.Button();
-            this.lIBDATABASEDataSet5 = new LibraryProjectWithDB.LIBDATABASEDataSet5();
-            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bookTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet5TableAdapters.BookTableAdapter();
             this.bookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publisherIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,9 +53,13 @@ namespace LibraryProjectWithDB
             this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearPublishedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remarksDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lIBDATABASEDataSet5 = new LibraryProjectWithDB.LIBDATABASEDataSet5();
+            this.buttonAddBook = new System.Windows.Forms.Button();
+            this.bookTableAdapter = new LibraryProjectWithDB.LIBDATABASEDataSet5TableAdapters.BookTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel7
@@ -69,6 +69,7 @@ namespace LibraryProjectWithDB
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(220, 2);
             this.panel7.TabIndex = 32;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // textBoxRemarks
             // 
@@ -82,6 +83,7 @@ namespace LibraryProjectWithDB
             this.textBoxRemarks.TabIndex = 24;
             this.textBoxRemarks.Text = "Remarks";
             this.textBoxRemarks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxRemarks.TextChanged += new System.EventHandler(this.textBoxRemarks_TextChanged);
             // 
             // panel6
             // 
@@ -90,6 +92,7 @@ namespace LibraryProjectWithDB
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(220, 2);
             this.panel6.TabIndex = 31;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // textBoxYearPublished
             // 
@@ -103,6 +106,7 @@ namespace LibraryProjectWithDB
             this.textBoxYearPublished.TabIndex = 23;
             this.textBoxYearPublished.Text = "Year Published";
             this.textBoxYearPublished.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxYearPublished.TextChanged += new System.EventHandler(this.textBoxYearPublished_TextChanged);
             // 
             // panel5
             // 
@@ -111,6 +115,7 @@ namespace LibraryProjectWithDB
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(220, 2);
             this.panel5.TabIndex = 28;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // textBoxAuthorName
             // 
@@ -124,6 +129,7 @@ namespace LibraryProjectWithDB
             this.textBoxAuthorName.TabIndex = 26;
             this.textBoxAuthorName.Text = "Author Name";
             this.textBoxAuthorName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxAuthorName.TextChanged += new System.EventHandler(this.textBoxAuthorName_TextChanged);
             // 
             // panel4
             // 
@@ -132,6 +138,7 @@ namespace LibraryProjectWithDB
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(220, 2);
             this.panel4.TabIndex = 27;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // textBoxCategoryID
             // 
@@ -145,6 +152,7 @@ namespace LibraryProjectWithDB
             this.textBoxCategoryID.TabIndex = 22;
             this.textBoxCategoryID.Text = "Category ID";
             this.textBoxCategoryID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxCategoryID.TextChanged += new System.EventHandler(this.textBoxCategoryID_TextChanged);
             // 
             // panel3
             // 
@@ -153,6 +161,7 @@ namespace LibraryProjectWithDB
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(220, 2);
             this.panel3.TabIndex = 29;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // textBoxPublisherID
             // 
@@ -166,6 +175,7 @@ namespace LibraryProjectWithDB
             this.textBoxPublisherID.TabIndex = 21;
             this.textBoxPublisherID.Text = "Publisher ID";
             this.textBoxPublisherID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPublisherID.TextChanged += new System.EventHandler(this.textBoxPublisherID_TextChanged);
             // 
             // panel2
             // 
@@ -174,6 +184,7 @@ namespace LibraryProjectWithDB
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 2);
             this.panel2.TabIndex = 30;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // textBoxBookName
             // 
@@ -187,6 +198,7 @@ namespace LibraryProjectWithDB
             this.textBoxBookName.TabIndex = 20;
             this.textBoxBookName.Text = "Book Name";
             this.textBoxBookName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxBookName.TextChanged += new System.EventHandler(this.textBoxBookName_TextChanged);
             // 
             // panel1
             // 
@@ -195,6 +207,7 @@ namespace LibraryProjectWithDB
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 2);
             this.panel1.TabIndex = 19;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonClearFields
             // 
@@ -207,6 +220,7 @@ namespace LibraryProjectWithDB
             this.buttonClearFields.TabIndex = 18;
             this.buttonClearFields.Text = "Clear";
             this.buttonClearFields.UseVisualStyleBackColor = true;
+            this.buttonClearFields.Click += new System.EventHandler(this.buttonClearFields_Click);
             // 
             // textBoxBookID
             // 
@@ -220,6 +234,7 @@ namespace LibraryProjectWithDB
             this.textBoxBookID.TabIndex = 17;
             this.textBoxBookID.Text = "ID";
             this.textBoxBookID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxBookID.TextChanged += new System.EventHandler(this.textBoxBookID_TextChanged);
             // 
             // dataGridView1
             // 
@@ -240,33 +255,7 @@ namespace LibraryProjectWithDB
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(641, 198);
             this.dataGridView1.TabIndex = 16;
-            // 
-            // buttonAddBook
-            // 
-            this.buttonAddBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddBook.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAddBook.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonAddBook.Location = new System.Drawing.Point(182, 420);
-            this.buttonAddBook.Name = "buttonAddBook";
-            this.buttonAddBook.Size = new System.Drawing.Size(310, 36);
-            this.buttonAddBook.TabIndex = 15;
-            this.buttonAddBook.Text = "Add Book";
-            this.buttonAddBook.UseVisualStyleBackColor = true;
-            this.buttonAddBook.Click += new System.EventHandler(this.buttonAddBook_Click);
-            // 
-            // lIBDATABASEDataSet5
-            // 
-            this.lIBDATABASEDataSet5.DataSetName = "LIBDATABASEDataSet5";
-            this.lIBDATABASEDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bookBindingSource
-            // 
-            this.bookBindingSource.DataMember = "Book";
-            this.bookBindingSource.DataSource = this.lIBDATABASEDataSet5;
-            // 
-            // bookTableAdapter
-            // 
-            this.bookTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bookIDDataGridViewTextBoxColumn
             // 
@@ -310,6 +299,33 @@ namespace LibraryProjectWithDB
             this.remarksDataGridViewTextBoxColumn.HeaderText = "Remarks";
             this.remarksDataGridViewTextBoxColumn.Name = "remarksDataGridViewTextBoxColumn";
             // 
+            // bookBindingSource
+            // 
+            this.bookBindingSource.DataMember = "Book";
+            this.bookBindingSource.DataSource = this.lIBDATABASEDataSet5;
+            // 
+            // lIBDATABASEDataSet5
+            // 
+            this.lIBDATABASEDataSet5.DataSetName = "LIBDATABASEDataSet5";
+            this.lIBDATABASEDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // buttonAddBook
+            // 
+            this.buttonAddBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddBook.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddBook.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonAddBook.Location = new System.Drawing.Point(182, 420);
+            this.buttonAddBook.Name = "buttonAddBook";
+            this.buttonAddBook.Size = new System.Drawing.Size(310, 36);
+            this.buttonAddBook.TabIndex = 15;
+            this.buttonAddBook.Text = "Add Book";
+            this.buttonAddBook.UseVisualStyleBackColor = true;
+            this.buttonAddBook.Click += new System.EventHandler(this.buttonAddBook_Click);
+            // 
+            // bookTableAdapter
+            // 
+            this.bookTableAdapter.ClearBeforeFill = true;
+            // 
             // addBookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,8 +353,8 @@ namespace LibraryProjectWithDB
             this.Text = "addBookForm";
             this.Load += new System.EventHandler(this.addBookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lIBDATABASEDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

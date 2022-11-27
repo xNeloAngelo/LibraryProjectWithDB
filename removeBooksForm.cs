@@ -17,6 +17,7 @@ namespace LibraryProjectWithDB
         {
             InitializeComponent();
         }
+        private DataTable dataTAble = new DataTable();
         SqlConnection connectionOne = new SqlConnection(@"Data Source=DESKTOP-65NBRKQ;Initial Catalog=LIBDATABASE;Integrated Security=True");
         private void removeBooksForm_Load(object sender, EventArgs e)
         {
